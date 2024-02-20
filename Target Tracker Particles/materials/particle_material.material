@@ -1,0 +1,98 @@
+{
+  "modelName": "shader_code_asset_material_model",
+  "name": "particle_material",
+  "identifier": "shader_code_asset_material_model:1862637-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+  "alphaTestEnabled": false,
+  "alphaTestThreshold": 0,
+  "blendMode": "alpha",
+  "cullMode": "back",
+  "diffuseFactor": "0xffffffff",
+  "diffuseTextureTransform": {
+    "offsetU": 0,
+    "offsetV": 0,
+    "rotation": 0,
+    "scaleU": 1,
+    "scaleV": 1
+  },
+  "doubleSided": false,
+  "fragmentOutputCount": 1,
+  "importIssues": {},
+  "isDiffuseTextureIdentifierEnabled": false,
+  "readDepth": false,
+  "shader": "shader_interface_model:1567476-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+  "transparency": 1,
+  "writeDepth": true,
+  "writesToColorBufferAlpha": true,
+  "writesToColorBufferBlue": true,
+  "writesToColorBufferGreen": true,
+  "writesToColorBufferRed": true,
+  "children": [
+    {
+      "modelName": "composed_material_parameters_model",
+      "identifier": "composed_material_parameters_model:1862639-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+      "children": [
+        {
+          "modelName": "composed_material_parameter_model",
+          "name": "diffuseColor",
+          "identifier": "composed_material_parameter_model:1862827-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+          "hasTextureParameters": false,
+          "isTextureIdentifierEnabled": false,
+          "rawValue": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "textureFilter": "bilinear",
+          "textureWrapModeU": "repeat",
+          "textureWrapModeV": "repeat",
+          "type": "color"
+        },
+        {
+          "modelName": "composed_material_parameter_model",
+          "name": "diffuseTexture",
+          "identifier": "composed_material_parameter_model:1862643-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+          "hasTextureParameters": false,
+          "isTextureIdentifierEnabled": false,
+          "textureFilter": "bilinear",
+          "textureWrapModeU": "repeat",
+          "textureWrapModeV": "repeat",
+          "type": "texture"
+        },
+        {
+          "modelName": "composed_material_parameter_model",
+          "name": "targetPos",
+          "identifier": "composed_material_parameter_model:1862645-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+          "hasTextureParameters": false,
+          "isTextureIdentifierEnabled": false,
+          "rawValue": [
+            0,
+            0,
+            0
+          ],
+          "textureFilter": "bilinear",
+          "textureWrapModeU": "repeat",
+          "textureWrapModeV": "repeat",
+          "type": "vec3"
+        },
+        {
+          "modelName": "composed_material_parameter_model",
+          "name": "targetRot",
+          "identifier": "composed_material_parameter_model:1862647-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+          "hasTextureParameters": false,
+          "isTextureIdentifierEnabled": false,
+          "rawValue": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "textureFilter": "bilinear",
+          "textureWrapModeU": "repeat",
+          "textureWrapModeV": "repeat",
+          "type": "vec4"
+        }
+      ]
+    }
+  ]
+}

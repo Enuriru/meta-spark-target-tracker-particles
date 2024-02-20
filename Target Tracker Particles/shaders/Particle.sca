@@ -1,0 +1,45 @@
+
+
+vec3 quat_rotate( vec4 q, vec3 v ){ 
+	return v + 2.0*cross(cross(v, q.xyz ) + q.w*v, q.xyz);
+} 
+
+
+//@param [default=#FFFFFFFF] diffuseColor
+
+void main(
+
+  vec4 diffuseColor,
+  optional <std::Texture2d> diffuseTexture,
+
+  vec3 targetPos,
+  vec4 targetRot,
+
+  out vec4 Position,
+  out vec4 Color
+
+) {
+
+  if (std::getViewMatrix()[3] != vec4(0, 0, 0, 1)) {
+
+    Position = std::getModelViewProjectionMatrix() * std::getVertexPosition();
+
+  } else {
+
+    vec4 modelPosition = std::getModelMatrix() * std::getVertexPosition();
+    
+    modelPosition.xyz = quat_rotate(targetRot, modelPosition.xyz);
+    modelPosition.xyz += (targetPos - std::getCameraPosition().xyz);
+  
+    Position = std::getViewProjectionMatrix() * modelPosition;
+
+  }
+
+
+
+
+  Color = diffuseTexture.sample(std::getVertexTexCoord()).valueOr(vec4(1)) * diffuseColor;
+
+
+
+}
