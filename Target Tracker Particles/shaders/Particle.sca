@@ -1,8 +1,15 @@
+/*----------------------------------------------------------------------------------------
 
+	© Denis Rossiev
+	http://instagram.com/enuriru/
+  https://awesome-ar.com
+	
+----------------------------------------------------------------------------------------*/
 
 vec3 quat_rotate( vec4 q, vec3 v ){ 
 	return v + 2.0*cross(cross(v, q.xyz ) + q.w*v, q.xyz);
 } 
+
 
 
 //@param [default=#FFFFFFFF] diffuseColor
@@ -26,12 +33,18 @@ void main(
 
   } else {
 
-    vec4 modelPosition = std::getModelMatrix() * std::getVertexPosition();
-    
+
+    vec4 local_position = std::getVertexPosition();
+    vec4 modelPosition = std::getModelMatrix() * local_position;
+
     modelPosition.xyz = quat_rotate(targetRot, modelPosition.xyz);
     modelPosition.xyz += (targetPos - std::getCameraPosition().xyz);
-  
-    Position = std::getViewProjectionMatrix() * modelPosition;
+
+
+    mat4 view = std::getViewMatrix();
+    vec4 view_position = view * modelPosition;
+
+    Position = std::getProjectionMatrix() * view_position;
 
   }
 

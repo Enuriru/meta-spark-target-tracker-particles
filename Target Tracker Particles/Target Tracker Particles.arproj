@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:1566610-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
   "id": "1566608e0e6550ae0ad4c4c90640bda4393262f",
-  "revision": "1891493e0e6550ae0ad4c4c90640bda4393262f",
+  "revision": "1280221fb7291110d7e434aa07856ec58f3acab",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -34,12 +34,7 @@
   "projectFormatType": "separated_files",
   "usingPatchesV2": true,
   "visual_programming": {
-    "graphs": [
-      {
-        "modelName": "patch_graph",
-        "identifier": "patch_graph:1566696-e0e6550a-e0ad-4c4c-9064-0bda4393262f"
-      }
-    ]
+    "sectionFileLocation": "Target Tracker Particles.patches"
   },
   "children": [
     {
@@ -83,7 +78,7 @@
           "modelName": "shader_code_asset_model",
           "name": "Particle",
           "identifier": "shader_code_asset_model:1567474-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
-          "assetDataHash": "aeb8cada60a00ff218fff360d1a17eeb",
+          "assetDataHash": "6e2d833bb028f4120d128e5c1c8655d2",
           "assetLocator": "shaders/Particle.sca",
           "builtinDeps": [
             "texture2d",
@@ -91,15 +86,15 @@
           ],
           "externalDeps": [],
           "isExternalAsset": true,
-          "moduleName": "sparkShaderCode10733530349905394499",
-          "wordsHash": 1955402705002305734,
+          "moduleName": "sparkShaderCode11338959103899169394",
+          "wordsHash": -4291671205426088508,
           "children": [
             {
               "modelName": "shader_interface_model",
               "identifier": "shader_interface_model:1567476-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
               "description": "",
               "functionName": "user::main",
-              "linkageName": "sparkShaderCode10733530349905394499",
+              "linkageName": "sparkShaderCode11338959103899169394",
               "children": [
                 {
                   "modelName": "shaderInputPorts",
@@ -108,7 +103,7 @@
                     {
                       "modelName": "shader_input_port_model",
                       "name": "diffuseColor",
-                      "identifier": "shader_input_port_model:1890581-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+                      "identifier": "shader_input_port_model:1279595-fb729111-0d7e-434a-a078-56ec58f3acab",
                       "defaultValue": {
                         "type": 3,
                         "value": [
@@ -124,7 +119,7 @@
                     {
                       "modelName": "shader_input_port_model",
                       "name": "diffuseTexture",
-                      "identifier": "shader_input_port_model:1890583-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+                      "identifier": "shader_input_port_model:1279597-fb729111-0d7e-434a-a078-56ec58f3acab",
                       "defaultValue": {
                         "type": 0,
                         "value": 0
@@ -135,7 +130,7 @@
                     {
                       "modelName": "shader_input_port_model",
                       "name": "targetPos",
-                      "identifier": "shader_input_port_model:1890585-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+                      "identifier": "shader_input_port_model:1279599-fb729111-0d7e-434a-a078-56ec58f3acab",
                       "defaultValue": {
                         "type": 2,
                         "value": [
@@ -150,7 +145,7 @@
                     {
                       "modelName": "shader_input_port_model",
                       "name": "targetRot",
-                      "identifier": "shader_input_port_model:1890587-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+                      "identifier": "shader_input_port_model:1279601-fb729111-0d7e-434a-a078-56ec58f3acab",
                       "defaultValue": {
                         "type": 3,
                         "value": [
@@ -172,21 +167,21 @@
                     {
                       "modelName": "shader_output_port_model",
                       "name": "return",
-                      "identifier": "shader_output_port_model:1890589-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+                      "identifier": "shader_output_port_model:1279603-fb729111-0d7e-434a-a078-56ec58f3acab",
                       "description": "",
                       "valueType": "void_return"
                     },
                     {
                       "modelName": "shader_output_port_model",
                       "name": "Position",
-                      "identifier": "shader_output_port_model:1890591-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+                      "identifier": "shader_output_port_model:1279605-fb729111-0d7e-434a-a078-56ec58f3acab",
                       "description": "",
                       "valueType": "vec4"
                     },
                     {
                       "modelName": "shader_output_port_model",
                       "name": "Color",
-                      "identifier": "shader_output_port_model:1890593-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
+                      "identifier": "shader_output_port_model:1279607-fb729111-0d7e-434a-a078-56ec58f3acab",
                       "description": "",
                       "valueType": "vec4"
                     }
@@ -210,7 +205,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:1863532-e0e6550a-e0ad-4c4c-9064-0bda4393262f",
-          "assetDataHash": "ce6284d337b220987cfb238ddda23440",
+          "assetDataHash": "984eec2ac0a8c7f7e9e80572991caf6d",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }
@@ -290,7 +285,7 @@
       "effectUsesCameraControl": false,
       "effectUsesCameraInfoScriptingModule": false,
       "effectUsesCameraShare": false,
-      "effectUsesComponentEvaluation": false,
+      "effectUsesComponentEvaluation": true,
       "effectUsesComposedLocally": false,
       "effectUsesComposedMaterial": true,
       "effectUsesControllers": false,
